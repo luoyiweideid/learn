@@ -30,7 +30,7 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
         <!-- 生成实体的包名和位置-->
-        <javaModelGenerator targetPackage="com.mybatis.generator.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.cn.learn.entity" targetProject="src/main/java">
             <!-- 默认false 是否允许子包 -->
             <property name="enableSubPackages" value="true" />
             <!-- 默认false 是否对model添加 构造函数 -->
@@ -45,7 +45,7 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.mybatis.generator.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.cn.learn.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName是数据库中的表名 domainObjectName是实体类名-->

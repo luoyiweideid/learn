@@ -1,4 +1,4 @@
-package com.mybatis.generator.entity;
+package com.cn.learn.entity;
 
 import java.io.Serializable;
 

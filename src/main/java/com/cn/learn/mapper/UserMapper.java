@@ -1,6 +1,6 @@
-package com.mybatis.generator.mapper;
+package com.cn.learn.mapper;
 
-import com.mybatis.generator.entity.User;
+import com.cn.learn.entity.User;
 
 public interface UserMapper {
     /**

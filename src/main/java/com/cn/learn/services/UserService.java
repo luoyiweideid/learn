@@ -1,7 +1,7 @@
-package com.mybatis.generator.services;
+package com.cn.learn.services;
 
-import com.mybatis.generator.entity.User;
-import com.mybatis.generator.mapper.UserMapper;
+import com.cn.learn.mapper.UserMapper;
+import com.cn.learn.entity.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

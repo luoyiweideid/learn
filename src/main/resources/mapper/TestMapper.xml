@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.learn.mapper.TestMapper">
+  <resultMap id="BaseResultMap" type="com.cn.learn.entity.Test">
+    <!--@mbg.generated-->
+    <!--@Table test-->
+    <id column="test_id" jdbcType="INTEGER" property="testId" />
+    <result column="desc" jdbcType="VARCHAR" property="desc" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    test_id, `desc`, phone
+  </sql>
+</mapper>
