@@ -71,7 +71,7 @@ public class TestService {
     public List<Test> getByDesc(String desc) {
         //创建查询请求
         SearchRequest request = new SearchRequest("test");
-        // 构建查询参数，比如查询数量，查询耗费时间上限等
+        //构建查询参数，比如查询数量，查询耗费时间上限等
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.timeout(new TimeValue(20, TimeUnit.SECONDS));
         //查询字段
