@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.cn.learn")
-public class GeneratorApplication {
+public class LearnApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GeneratorApplication.class, args);
+        SpringApplication.run(LearnApplication.class, args);
     }
 
 }

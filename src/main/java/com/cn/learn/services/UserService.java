@@ -23,7 +23,7 @@ public class UserService {
      * @return 用户信息
      */
     public User getById(Integer id){
-        return userMapper.selectByPrimaryKey(id);
+        return userMapper.selectById(id);
     }
 
     /**
@@ -33,6 +33,12 @@ public class UserService {
         User user = new User();
         user.setAge(18);
         user.setName("张三");
-        userMapper.insertSelective(user);
+        userMapper.insert(user);
     }
+
+
+    public void testMybatisPlus() {
+        //userMapper.insert()
+    }
+
 }
