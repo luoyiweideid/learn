@@ -4,7 +4,8 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 数据库驱动:选择resources下面配置的文件-->
-    <classPathEntry location="src/main/resources/mysql/mysql-connector-java-5.1.19.jar"/>
+    <classPathEntry location="src/main/resources/mysql/mysql-connector-java-8.0.22.jar"/>
+
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <!-- JavaBean 实现 序列化 接口 -->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
@@ -13,7 +14,8 @@
         <!-- optional，旨在创建class时，对注释进行控制 -->
         <commentGenerator>
             <property name="suppressDate" value="true"/>
-            <!-- <property name="suppressAllComments" value="true"/>-->
+            <!--是否去除自动生成的注解 ture-是 false-否 -->
+            <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!--数据库链接URL，用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
@@ -48,7 +50,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.cn.learn.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
-        <!-- 要生成的表 tableName是数据库中的表名 domainObjectName是实体类名-->
+        <!-- 要生成的表 tableName是数据库中的表名 domainObjectName是实体类名 若是该数据库下所有表结构都要生成，则tableName配置为%-->
         <table tableName="user"
                domainObjectName="User"
                enableCountByExample="false"

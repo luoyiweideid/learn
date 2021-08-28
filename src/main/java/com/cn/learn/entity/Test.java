@@ -7,6 +7,9 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import lombok.Data;
 
+/**
+ * @author luoyiwei
+ */
 @Data
 @TableName(value = "test")
 public class Test implements Serializable {
